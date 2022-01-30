@@ -1,3 +1,5 @@
+let limit = 30
+
 let handler = async (m, { conn }) => {
   m.reply('Loading...')
   let res = `https://api.ichikaa.xyz/api/randomimage/cosplay?apikey=kohalip`
@@ -7,5 +9,5 @@ handler.help = ['cosplay']
 handler.tags = ['anime']
 
 handler.command = /^(cosplay)$/i
-
+handler.limit = true
 module.exports = handler

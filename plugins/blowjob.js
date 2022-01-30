@@ -1,4 +1,5 @@
 let hmtai = require('hmtai')
+let limit = 30
 
 let handler = async(m, { conn }) => {
 
@@ -11,4 +12,6 @@ handler.tags = ['anime']
 
 handler.command = /^(blowjob)$/i
 
+
+handler.limit = true
 module.exports = handler

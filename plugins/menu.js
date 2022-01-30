@@ -34,18 +34,18 @@ const defaultMenu = {
   before: `
 ╭─「 %me 」
 │ Hai, %name!
-│ BUTTON SEDANG ERROR!
+│ JANGAN SPAM COMMAND!
 │ Tersisa *%limit Limit*
 │ Level *%level (%exp / %maxexp)*
 │ 
-│ SC original: Narutomo
-│ Recode: Rimuru
+│ 
+│ Owner: Yuuru
 │
 │ Uptime: *%uptime (%muptime)*
 │ Database: %rtotalreg of %totalreg
 │
-│ Github: https://github.com/Ervan2525
-│ YouTube: https://youtube.com/channel/UCQV7cLK7IY_MRMHH4phQORQ
+│ Baca Komik Doujinshi: https://narahoshi.com
+│ Forum Kami: https://anicorner.my.id
 ╰────
 %readmore`.trimStart(),
   header: '╭─「 %category 」',

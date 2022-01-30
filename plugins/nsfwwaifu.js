@@ -1,4 +1,5 @@
 let fetch = require("node-fetch");
+let limit = 30
 let handler = async (m, { conn }) => {
   let res = await fetch(global.API("https://api.waifu.pics/", "/nsfw/waifu"));
   if (!res.ok) throw await `${res.status} ${res.statusText}`;
@@ -19,5 +20,5 @@ handler.tags = ["fun"];
 handler.command = /^(nsfwwaifu|waifunsfw)$/i;
 
 handler.limit = true;
-
+handler.limit = true
 module.exports = handler;

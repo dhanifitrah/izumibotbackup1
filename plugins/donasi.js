@@ -1,12 +1,16 @@
 let handler = async m => m.reply(`
 ╭─「 Donasi • Pulsa 」
-│ • Indosat Ooredoo [085895086040]
-│ • Telkomsel [081334177340]
+│ • Dana [087833474586]
+│ • Gopay [087833474586]
+│ • OVO [087833474586]
+│ • LinkAja [087833474586]
+│ • BRI [6555-0103-2119-535]
+│ • QRIS [ wa.me/6287833474586 ]
+│ • Telkomsel [085236209052]
 ╰────
 
 ╭─「 Donasi • Non Pulsa 」
-│ • https://saweria.co/Nurutomo
-│ • https://saweria.co/ariffb
+│ • QRIS Chat Owner di wa.me/6287833474586
 ╰────
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['donasi']

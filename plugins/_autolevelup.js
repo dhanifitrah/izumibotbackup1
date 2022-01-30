@@ -8,9 +8,9 @@ module.exports = {
 
 		if (before !== user.level) {
 			m.reply(`
-Selamat, anda telah naik level!
+Selamat, Senpai telah naik level!
 *${before}* -> *${user.level}*
-gunakan *.profile* untuk mengecek
+ketik *.profile* untuk mengecek level senpai
 	`.trim())
 		}
 	}

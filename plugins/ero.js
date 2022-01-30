@@ -1,3 +1,5 @@
+let limit = 30
+
 let hmtai = require('hmtai')
 
 let handler = async(m, { conn }) => {
@@ -10,5 +12,5 @@ handler.help = ['ero']
 handler.tags = ['anime']
 
 handler.command = /^(ero)$/i
-
+handler.limit = true
 module.exports = handler

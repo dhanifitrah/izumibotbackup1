@@ -1,5 +1,5 @@
 let hmtai = require('hmtai')
-
+let limit = 30
 let handler = async(m, { conn }) => {
 
 let img = await hmtai.nsfw.incest ()
@@ -10,5 +10,5 @@ handler.help = ['incest']
 handler.tags = ['anime']
 
 handler.command = /^(incest)$/i
-
+handler.limit = true
 module.exports = handler

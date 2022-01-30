@@ -1,9 +1,9 @@
 let fs = require('fs')
 let chalk = require('chalk')
 
-global.owner = ['61426656718'] // Nomor lu disini
-global.mods = [61426656718] // Want some help?
-global.prems = [12528585024] // Premium limit nya ga abis abis
+global.owner = ['6287833474586'] // Nomor lu disini
+global.mods = ['6287833474586'] // Want some help?
+global.prems = ['12528585024'] // Premium limit nya ga abis abis
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -15,7 +15,7 @@ global.APIs = { // API Prefix
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
-  'https://api.xteam.xyz': 'd90a9e986e18778b',
+  'https://api.xteam.xyz': 'yuuru',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.me': 'apivinz',
   'https://pencarikode.xyz': 'pais',
@@ -27,8 +27,8 @@ global.APIKeys = { // APIKey Here
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = 'Rimuru'
-  var sticker_author = 'Tempest'
+  var sticker_name = 'narahoshi.com'
+  var sticker_author = 'Baca Doujinshi'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor

@@ -6,6 +6,9 @@ let handler = async (m, { conn }) => {
 	let img = 'https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg'
     let trut = [
 "Pernah ngambil uang ortu apa ga?",
+"Pernah coli gak?",
+"Pernah gabung ke touman gak?",
+"Pernah jadi tuhan anime gak?",
 "Pernah bohong sama ortu apa aja?\nCoba ceritakan tentang kebohongannya",
 "Apa makanan yang kamu sukai?",
 "Siapa yang mau di jadikan pacar di gc ini?",
