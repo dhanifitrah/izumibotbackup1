@@ -1,13 +1,16 @@
+let hmtai = require('hmtai')
 let limit = 30
 
-let handler = async (m, { conn }) => {
-  m.reply('Loading...')
-  let res = `https://api.ichikaa.xyz/api/randomimage/cosplay?apikey=kohalip`
-  conn.sendFile(m.chat, res, 'cosplay.jpg', 'huu suka ama cosplayer', m)
-}
-handler.help = ['cosplay']
-handler.tags = ['anime']
+let handler = async(m, { conn }) => {
 
-handler.command = /^(cosplay)$/i
+let img = await hmtai.nsfw.masturbation()
+await conn.sendFile(m.chat, img, '', '', m)
+
+}
+handler.help = ['masturbation']
+handler.tags = ['anime']
+handler.limit = true
+
+handler.command = /^(masturbation)$/i
 handler.limit = true
 module.exports = handler

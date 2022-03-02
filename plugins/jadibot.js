@@ -40,7 +40,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
     conn.on('CB:action,,call', conn.onCall)
     conn.regenerateQRIntervalMs = null
     conn.connect().then(async ({ user }) => {
-      parent.reply(m.chat, 'Berhasil tersambung dengan WhatsApp - mu.\n*NOTE: Ini cuma numpang*\n' + JSON.stringify(user, null, 2), m)
+      parent.reply(m.chat, 'Berhasil tersambung dengan WhatsApp - mu.\n*NOTE:Jika ada kendala silahkan hubungi owner*\n' + JSON.stringify(user, null, 2), m)
       if (auth) return
       await parent.sendMessage(user.jid, `Kamu bisa login tanpa qr dengan pesan dibawah ini. untuk mendapatkan kode lengkapnya, silahkan kirim *${usedPrefix}getcode* untuk mendapatkan kode yang akurat`, MessageType.extendedText)
       parent.sendMessage(user.jid, `${usedPrefix + command} ${Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString('base64')}`, MessageType.extendedText)
@@ -69,11 +69,12 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
     global.conns.push(conn)
   } else throw 'Tidak bisa membuat bot didalam bot!\n\nhttps://wa.me/' + global.conn.user.jid.split`@`[0] + '?text=.jadibot'
 }
-handler.help = ['jadibot']
-handler.tags = ['jadibot','premium']
+handler.help = ['sewabot']
+handler.tags = ['sewabot','premium']
 
-handler.command = /^jadibot$/i
+handler.command = /^sewabot$/i
 
 handler.limit = true
+handler.premium = true
 handler.tags = ['premium']
 module.exports = handler

@@ -6,7 +6,7 @@ let handler = async (m, { conn, text, isROwner }) => {
     m.reply(stdout.toString())
   }
 }
-handler.help = ['update']
+handler.help = ['oupdate']
 handler.tags = ['host']
 handler.command = /^update$/i
 handler.owner = false

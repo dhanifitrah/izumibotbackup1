@@ -3,14 +3,14 @@ let limit = 30
 
 let handler = async(m, { conn }) => {
 
-let img = await hmtai.nsfw.bdsm()
+let img = await hmtai.nsfw.public()
 await conn.sendFile(m.chat, img, '', '', m)
 
 }
-handler.help = ['bdsm']
+handler.help = ['horny']
 handler.tags = ['anime']
 handler.limit = true
 
-handler.command = /^(bdsm)$/i
+handler.command = /^(horny)$/i
 handler.limit = true
 module.exports = handler

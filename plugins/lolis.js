@@ -1,4 +1,4 @@
-let fetch = require('node-fetch')
+bylet fetch = require('node-fetch')
 
 let handler = async (m, { conn }) => {
 	let url = loli[Math.floor(Math.random() * loli.length)]
@@ -6,15 +6,15 @@ let handler = async (m, { conn }) => {
 		contentText: 'Random Loli',
 		footerText: 'Lolinya kak..',
 		buttons: [
-			{ buttonId: '.lolis', buttonText: { displayText: 'Get Again' }, type: 1 }
+			{ buttonId: '.loli', buttonText: { displayText: 'Get Again' }, type: 1 }
 		],
 		headerType: 4,
 		imageMessage: (await conn.prepareMessageMedia(await (await fetch(url)).buffer(), 'imageMessage', {})).imageMessage
 	}, 'buttonsMessage', { quoted: m })
 }
-handler.command = /^(lolis)$/i
-handler.tags = ['internet']
-handler.help = ['lolis']
+handler.command = /^(loli)$/i
+handler.tags = ['anime']
+handler.help = ['loli']
 module.exports = handler
 
 global.loli = [
